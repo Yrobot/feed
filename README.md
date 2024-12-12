@@ -14,18 +14,22 @@ Making content syndication simple and intuitive!</p>
 
 **🔒 Tested**: Tests & snapshot for each syndication format to avoid regressions.
 
+# Fork Fix
+
+1. fix rss2() not support `Extension` and add test `Extension` logic
+
 # Getting Started
 
 ## Installation
 
 ```bash
-$ yarn add feed
+$ yarn add @yrobot/feed
 ```
 
 ## Example
 
 ```js
-import { Feed } from "feed";
+import { Feed } from "@yrobot/feed";
 
 const feed = new Feed({
   title: "Feed Title",
@@ -110,7 +114,7 @@ If you are migrating from a version older than `3.0.0`, be sure to update your i
 If your environment supports the ES6 module syntax, you can `import` as described above:
 
 ```ts
-import { Feed } from "feed";
+import { Feed } from "@yrobot/feed";
 ```
 
 Otherwise, you can stick with `require()`:
